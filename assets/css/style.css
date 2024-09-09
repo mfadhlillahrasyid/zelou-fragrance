@@ -512,7 +512,7 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 600;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -551,12 +551,18 @@ section {
 .what-we-do {
   background-color: white;
   text-align: left;
-  padding-bottom: 0;
+  padding: 0;
 }
 
 .what-we-do .isi p {
   font-size: 20px;
   line-height: 30px;
+}
+
+.what-we-do .isi h1 {
+  font-size: 30px;
+  text-align: left;
+  font-weight: 700;
 }
 
 .what-we-do .isi h5 {
@@ -596,7 +602,7 @@ section {
   font-weight: 600;
   margin: 25px 0;
   font-size: 22px;
-  background-color: #008202;
+  background-color: #161616;
   padding: 1rem 2rem;
   border-radius: 1rem;
   color: white;
@@ -778,17 +784,10 @@ section {
   border-radius: 1rem;
   background: #fff;
   transition: ease-in-out 0.3s;
-}
-
-.services .icon-box i {
-  float: left;
-  color: #22641a;
-  font-size: 40px;
-  line-height: 0;
+  border: 5px solid #ffffff;
 }
 
 .services .icon-box h4 {
-  margin-left: 70px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
@@ -800,17 +799,13 @@ section {
 }
 
 .services .icon-box p {
-  margin-left: 70px;
   line-height: 24px;
   font-size: 15px;
+  margin-bottom: 0;
 }
 
 .services .icon-box:hover {
-  box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.08);
-}
-
-.services .icon-box:hover h4 a {
-  color: #22641a;
+  border: 5px solid #384046;
 }
 
 /*--------------------------------------------------------------
@@ -824,17 +819,6 @@ section {
 .portfolio img {
   border-radius: 1rem;
   transition: all 0.1s ease-in-out;
-}
-
-.portfolio img::before {
-  /* background: linear-gradient(0deg, #000000 0%, #ffffff00 100%); */
-  content: "";
-  background: rgba(56, 64, 70, 0.7);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
 .portfolio img:hover {
@@ -1145,7 +1129,7 @@ section {
   margin-bottom: 20px;
 }
 
-.testimonials .btn-atc a {
+/* .testimonials .btn-atc a {
   text-align: center;
   margin-left: 10px;
   padding: 1rem 2rem;
@@ -1156,7 +1140,7 @@ section {
   font-weight: 600;
   transition: 0.3s;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
-}
+} */
 
 .testimonials .btn-atc a:active {
   transform: scale(0.97);
@@ -1450,6 +1434,11 @@ section {
   background: #323232;
 }
 
+#footer .footer-top img {
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
 }
@@ -1651,9 +1640,13 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: #22641a;
+  background: #161616;
   background-size: cover;
   padding: 60px 0;
+}
+
+.cta img {
+  border-radius: 1rem;
 }
 
 .cta h3 {
